@@ -6,4 +6,3 @@ telethon
 pyyaml==3.12
 pymongo==3.11.0
 dnspython==2.0.0
-spacy==2.2
