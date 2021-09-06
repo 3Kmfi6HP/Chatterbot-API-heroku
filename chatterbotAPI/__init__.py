@@ -47,14 +47,6 @@ trainer.train(
     # 'chatterbot.corpus.italian'
 )
 trainer = ListTrainer(cb)
-trainer.train(
-    "clean_chat_corpus\ptt.tsv"
-    "clean_chat_corpus\douban_single_turn.tsv"
-    "clean_chat_corpus\tieba.tsv"
-    r"clean_chat_corpus\xiaohuangji.tsv"
-    "clean_chat_corpus\weibo.tsv"
-    "clean_chat_corpus\subtitle.tsv"
-)
 xibaozi = [
     "你好",
     "朋友你好!",
