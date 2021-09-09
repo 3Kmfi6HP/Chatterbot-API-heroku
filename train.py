@@ -40,7 +40,7 @@ if __name__ == '__main__':
                     chat_from = event.chat if event.chat else (await event.get_chat())  # telegram MAY not send the chat enity
                     chat_title = chat_from.title
                     raw_text = event.message.message
-                    req_data = requests.get(f'http://0.0.0.0:{PORT}/?query={raw_text}')
+                    req_data = requests.get(f'https://mychatbotapp6.herokuapp.com/?query={raw_text}')
                     req_data = json.loads(req_data.text)
                     req_data = req_data['response']['bot']
                     time_taken = req_data['response']['time_taken']
@@ -57,7 +57,7 @@ if __name__ == '__main__':
                     chat_from = event.chat if event.chat else (await event.get_chat())  # telegram MAY not send the chat enity
                     chat_title = chat_from.title
                     raw_text = event.message.message
-                    req_data = requests.get(f'http://0.0.0.0:{PORT}/?query={raw_text}')
+                    req_data = requests.get(f'https://mychatbotapp6.herokuapp.com/?query={raw_text}')
                     req_data = json.loads(req_data.text)
                     req_data = req_data['response']['bot']
                     time_taken = req_data['response']['time_taken']
@@ -74,7 +74,7 @@ if __name__ == '__main__':
         if match:
                 try:
                     raw_text = event.message.message
-                    req_data = requests.get(f'http://0.0.0.0:{PORT}/?query={raw_text}')
+                    req_data = requests.get(f'https://mychatbotapp6.herokuapp.com/?query={raw_text}')
                     req_data = json.loads(req_data.text)
                     req_data = req_data['response']['bot']
                     time_taken = req_data['response']['time_taken']
@@ -85,7 +85,7 @@ if __name__ == '__main__':
                     print("time", time_taken)
                 except:
                     pass
-                
+
     @client.on(events.NewMessage(incoming=True))
     async def handle_new_message(event):
         global read_event
