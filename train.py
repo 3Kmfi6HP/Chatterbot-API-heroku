@@ -14,8 +14,7 @@ from telethon.sessions import StringSession
 # or use your own
 api_id = 2890925
 api_hash = '688f2cb389b367b22ce08844318aacbd'
-list_chat_id=[-1001514262324,-1001268770001,-1001174963531,-1001366956442,-1001213526515,-1001150986618,-1001348077844,-1001441167695,-1001321370633]
-#list_chat_id=[-1001514262324,-1001268770001]
+list_chat_id=[]
 read_event = {}
 # fill in your own details here
 phone = 'phone'
