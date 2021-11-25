@@ -7,8 +7,6 @@
         "Chatbot",
         "AI"
     ],
-    "success_url": "https://endpoint.mannu.me/docs",
-    "repository": "https://github.com/pokurt/Chatterbot-API",
     "stack": "container",
     "env": {
         "DB_URL": {
