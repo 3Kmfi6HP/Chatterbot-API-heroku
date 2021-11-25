@@ -4,5 +4,5 @@ username = input('Enter a username: ')
 
 while True:
     query = input(f'{username}: ')
-    r = p(f'https://mychatbotapp6.herokuapp.com/?query={query}')
+    r = p(f'https://mychatbotapp.herokuapp.com/?query={query}')
     print('Bot:', r.json()['response']['bot'])
