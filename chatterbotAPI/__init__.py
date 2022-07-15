@@ -42,7 +42,7 @@ trainer.train(
     # 'chatterbot.corpus.english',
     'chatterbot.corpus.chinese',
     'chatterbot.corpus.chinese.greetings',
-    'chatterbot.corpus.chinese.conversations'
+    #'chatterbot.corpus.chinese.conversations'
     # 'chatterbot.corpus.spanish',
     # 'chatterbot.corpus.italian'
 )
