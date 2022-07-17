@@ -1,5 +1,5 @@
-#FROM python:3.9-slim-stretch
-FROM python:3.11.0b4-slim-buster
+FROM python:3.6-slim-stretch
+#FROM python:3.11.0b4-slim-buster
 
 ENV PIP_NO_CACHE_DIR 1
 
