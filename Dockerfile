@@ -9,7 +9,7 @@ RUN pip3 install --upgrade pip setuptools
 COPY requirements.txt .
 
 # install dependencies
-RUN pip install -r requirements.txt
+RUN !pip3.6 install -r requirements.txt
 
 # copy the content of the local src directory to the working directory
 COPY . .
