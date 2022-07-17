@@ -1,4 +1,5 @@
-FROM python:3.6-slim-stretch
+#FROM python:3.9-slim-stretch
+FROM python:3.11.0b4-slim-buster
 
 ENV PIP_NO_CACHE_DIR 1
 
@@ -9,7 +10,7 @@ RUN pip3 install --upgrade pip setuptools
 COPY requirements.txt .
 
 # install dependencies
-RUN !pip3.6 install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 # copy the content of the local src directory to the working directory
 COPY . .
