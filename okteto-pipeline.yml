@@ -2,3 +2,5 @@ icon: https://apps.okteto.com/movies/icon.png
 deploy:
     #- okteto deploy --build -f docker-compose.yml
     - okteto build -f ./Dockerfile
+forward:
+    - 80:80
