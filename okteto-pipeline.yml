@@ -1,6 +1,10 @@
-icon: https://apps.okteto.com/movies/icon.png
+build:
+  api:
+    context: api
 deploy:
-    #- okteto deploy --build -f docker-compose.yml
-    - okteto build -f ./Dockerfile
-forward:
-    - 80:80
+  - okteto build -f ./Dockerfile
+dev:
+  api:
+    command: ["python3","-m","chatterbotAPI"]
+    forward:
+      - 80:80
